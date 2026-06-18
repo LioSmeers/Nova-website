@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Studio - Webdesign, SEO & Grafisch Ontwerp</title>
+    <meta
+      name="description"
+      content="Nova Studio helpt bedrijven groeien met professioneel webdesign, SEO en grafisch ontwerp."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg aria-hidden="true" class="icon-defs">
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7" /></symbol>
+      <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" /></symbol>
+      <symbol id="icon-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></symbol>
+      <symbol id="icon-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2" /><path d="M8 20h8M12 16v4" /></symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></symbol>
+      <symbol id="icon-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18h1.5a2 2 0 0 0 1.2-3.6 1.8 1.8 0 0 1 1.1-3.2H17a4 4 0 0 0 4-4C21 6.2 17 3 12 3Z" /><path d="M7.5 10h.01M10 7.5h.01M14 7.5h.01" /></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></symbol>
+      <symbol id="icon-message" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z" /></symbol>
+      <symbol id="icon-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V16h8v-1.3A7 7 0 0 0 12 2Z" /></symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 4l-4 16" /></symbol>
+      <symbol id="icon-rocket" viewBox="0 0 24 24"><path d="M5 15c-1 1-2 4-2 4s3-1 4-2l9-9a6 6 0 0 0 1.5-4.5A6 6 0 0 0 13 5Z" /><path d="M15 9h.01M8 16l-2-2M10 18l-2-2" /></symbol>
+      <symbol id="icon-zap" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 10-13h-7Z" /></symbol>
+      <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="5" /><circle cx="12" cy="12" r="1" /></symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" /></symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" /></symbol>
+      <symbol id="icon-trending" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8M14 7h7v7" /></symbol>
+      <symbol id="icon-headphones" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3ZM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3Z" /></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2.1Z" /></symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><path d="M17.5 6.5h.01" /></symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Z" /><circle cx="12" cy="10" r="2.5" /></symbol>
+      <symbol id="icon-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z" /><path d="M22 2 11 13" /></symbol>
+    </svg>
+
+    <header class="site-header" id="siteHeader">
+      <div class="container nav">
+        <a class="brand" href="#home" aria-label="Nova Studio home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>NOVA</span>
+        </a>
+        <nav class="nav-links" id="navLinks" aria-label="Hoofdnavigatie">
+          <a href="#home">Home</a>
+          <a href="#diensten">Diensten</a>
+          <a href="#over">Over Ons</a>
+          <a href="#werkwijze">Werkwijze</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="button button-small nav-cta" href="#contact">Gratis Gesprek</a>
+        <button class="menu-button" id="menuButton" aria-label="Menu openen" aria-expanded="false">
+          <svg class="icon menu-icon"><use href="#icon-menu"></use></svg>
+          <svg class="icon close-icon"><use href="#icon-x"></use></svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img class="hero-bg" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663627986054/9WZUiv22hjXRHBKJaTMVPf/lume-hero-bg-4YoCLC6JzmqHznD3J4LhUm.webp" alt="" />
+        <div class="dot-layer"></div>
+        <div class="float-layer" id="floatLayer">
+          <span class="glow glow-blue"></span>
+          <span class="glow glow-cyan"></span>
+        </div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="badge"><span></span>Webdesign · SEO · Grafisch Ontwerp</p>
+            <h1><span>Laat jouw bedrijf</span><span class="gradient-text">digitaal groeien.</span></h1>
+            <p class="hero-text">
+              Wij zijn <strong>Nova Studio</strong>. We helpen bedrijven groeien met
+              professioneel webdesign, gerichte SEO-strategieën en krachtig grafisch ontwerp.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#contact">Start jouw project <svg class="icon"><use href="#icon-arrow"></use></svg></a>
+              <a class="button button-outline" href="#diensten">Bekijk diensten</a>
+            </div>
+            <dl class="stats">
+              <div><dt class="gradient-text">100%</dt><dd>Maatwerk</dd></div>
+              <div><dt class="gradient-text">3</dt><dd>Kernservices</dd></div>
+              <div><dt class="gradient-text">24/7</dt><dd>Bereikbaar</dd></div>
+            </dl>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#diensten" aria-label="Scroll naar diensten">
+          <span>Scroll</span>
+          <svg class="icon"><use href="#icon-chevron"></use></svg>
+        </a>
+      </section>
+
+      <section class="section section-dark dot-section" id="diensten">
+        <div class="section-line"></div>
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="eyebrow">Wat ik doe</p>
+            <h2>Onze <span class="gradient-text">Diensten</span></h2>
+            <p>Alles wat jouw bedrijf nodig heeft om online te groeien: van een sterke digitale aanwezigheid tot een herkenbaar merk.</p>
+          </header>
+
+          <div class="service-grid">
+            <article class="service-card reveal" data-accent="#3B82F6">
+              <div class="service-image">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663627986054/9WZUiv22hjXRHBKJaTMVPf/lume-webdesign-dAC6deQgzNFJa8sgm6i3hg.webp" alt="Webdesign" />
+                <span class="icon-box" style="--accent: #3B82F6"><svg class="icon"><use href="#icon-monitor"></use></svg></span>
+              </div>
+              <div class="card-body">
+                <p class="card-kicker" style="--accent: #3B82F6">Websites die converteren</p>
+                <h3>Webdesign</h3>
+                <p>Ik ontwerp en bouw snelle, responsieve websites die jouw merk versterken en bezoekers omzetten in klanten.</p>
+                <ul><li>Responsief design</li><li>Snelle laadtijd</li><li>SEO-vriendelijk</li><li>Gebruiksvriendelijk</li></ul>
+                <a class="text-link" href="#contact" style="--accent: #3B82F6">Meer info <svg class="icon"><use href="#icon-arrow"></use></svg></a>
+              </div>
+            </article>
+
+            <article class="service-card reveal" data-accent="#06B6D4">
+              <div class="service-image">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663627986054/9WZUiv22hjXRHBKJaTMVPf/lume-seo-QMF4avVygex33hMttTPUoF.webp" alt="SEO" />
+                <span class="icon-box" style="--accent: #06B6D4"><svg class="icon"><use href="#icon-search"></use></svg></span>
+              </div>
+              <div class="card-body">
+                <p class="card-kicker" style="--accent: #06B6D4">Hoger in Google</p>
+                <h3>SEO</h3>
+                <p>Met een doordachte SEO-strategie zorg ik ervoor dat jouw bedrijf gevonden wordt door de juiste klanten.</p>
+                <ul><li>Zoekwoordonderzoek</li><li>On-page optimalisatie</li><li>Technische SEO</li><li>Maandelijkse rapportage</li></ul>
+                <a class="text-link" href="#contact" style="--accent: #06B6D4">Meer info <svg class="icon"><use href="#icon-arrow"></use></svg></a>
+              </div>
+            </article>
+
+            <article class="service-card reveal" data-accent="#8B5CF6">
+              <div class="service-image">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663627986054/9WZUiv22hjXRHBKJaTMVPf/lume-design-8iUewfFZA8CQjNTYL5d8vQ.webp" alt="Grafisch ontwerp" />
+                <span class="icon-box" style="--accent: #8B5CF6"><svg class="icon"><use href="#icon-palette"></use></svg></span>
+              </div>
+              <div class="card-body">
+                <p class="card-kicker" style="--accent: #8B5CF6">Visuele identiteit die opvalt</p>
+                <h3>Grafisch Ontwerp</h3>
+                <p>Van logo tot complete huisstijl: ik creëer een unieke visuele identiteit die jouw bedrijf onderscheidt.</p>
+                <ul><li>Logo & huisstijl</li><li>Social media visuals</li><li>Drukwerk</li><li>Brand guidelines</li></ul>
+                <a class="text-link" href="#contact" style="--accent: #8B5CF6">Meer info <svg class="icon"><use href="#icon-arrow"></use></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="over">
+        <span class="soft-glow left"></span>
+        <div class="container about-grid">
+          <div class="about-media reveal">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663627986054/9WZUiv22hjXRHBKJaTMVPf/lume-about-3KmKfMr5a2os2GUivJAWwM.webp" alt="Nova Studio" />
+            <div class="floating-stat"><strong class="gradient-text">100%</strong><span>Maatwerk & toewijding</span></div>
+          </div>
+          <div class="about-copy reveal">
+            <p class="eyebrow">Over Nova Studio</p>
+            <h2>Digitale groei, <span class="gradient-text">persoonlijk aanpak</span></h2>
+            <p><strong>Nova Studio</strong> is een creatieve studio voor webdesign, SEO en grafisch ontwerp. We helpen bedrijven om online op te vallen en te groeien.</p>
+            <p>Bij Nova Studio geloven we dat elk bedrijf professioneel gepresenteerd verdient te worden. We combineren esthetisch design met technische kennis en marketinginzicht.</p>
+            <ul class="check-list">
+              <li>Persoonlijke aanpak voor elk project</li>
+              <li>Combinatie van design, techniek en marketing</li>
+              <li>Resultaatgericht: jouw groei staat centraal</li>
+              <li>Transparante communicatie en eerlijke prijzen</li>
+              <li>Snelle oplevering zonder kwaliteitsverlies</li>
+            </ul>
+            <a class="button" href="#contact">Laten we samenwerken</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark dot-section" id="werkwijze">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="eyebrow">Hoe het werkt</p>
+            <h2>Onze <span class="gradient-text">Werkwijze</span></h2>
+            <p>Een helder, transparant proces van eerste contact tot succesvolle lancering.</p>
+          </header>
+          <div class="process">
+            <article class="process-step reveal" style="--accent: #3B82F6"><span class="step-icon"><svg class="icon"><use href="#icon-message"></use></svg><b>01</b></span><h3>Gratis Gesprek</h3><p>We starten met een vrijblijvend kennismakingsgesprek. Ik leer jouw bedrijf en doelen kennen.</p></article>
+            <article class="process-step reveal" style="--accent: #06B6D4"><span class="step-icon"><svg class="icon"><use href="#icon-bulb"></use></svg><b>02</b></span><h3>Strategie & Ontwerp</h3><p>Ik werk een strategie en eerste ontwerpen uit. Jij geeft feedback, ik verfijn.</p></article>
+            <article class="process-step reveal" style="--accent: #8B5CF6"><span class="step-icon"><svg class="icon"><use href="#icon-code"></use></svg><b>03</b></span><h3>Ontwikkeling</h3><p>Het ontwerp wordt omgezet naar een snelle, functionele website of visuele identiteit.</p></article>
+            <article class="process-step reveal" style="--accent: #10B981"><span class="step-icon"><svg class="icon"><use href="#icon-rocket"></use></svg><b>04</b></span><h3>Lancering & Groei</h3><p>We lanceren jouw project en blijven optimaliseren waar dat nodig is.</p></article>
+          </div>
+          <div class="center reveal"><a class="button" href="#contact">Begin vandaag nog</a></div>
+        </div>
+      </section>
+
+      <section class="section section-alt benefits-section">
+        <div class="top-glow"></div>
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="eyebrow">Waarom Nova Studio?</p>
+            <h2>De <span class="gradient-text">Nova Studio voordelen</span></h2>
+            <p>Wat ons onderscheidt van andere bureaus en freelancers.</p>
+          </header>
+          <div class="benefit-grid">
+            <article class="benefit reveal" style="--accent: #3B82F6"><span><svg class="icon"><use href="#icon-zap"></use></svg></span><h3>Snelle oplevering</h3><p>Geen maandenlange wachttijden. Ik lever jouw project snel en efficiënt op.</p></article>
+            <article class="benefit reveal" style="--accent: #06B6D4"><span><svg class="icon"><use href="#icon-target"></use></svg></span><h3>Resultaatgericht</h3><p>Elk ontwerp en elke strategie is gericht op jouw bedrijf laten groeien.</p></article>
+            <article class="benefit reveal" style="--accent: #8B5CF6"><span><svg class="icon"><use href="#icon-shield"></use></svg></span><h3>Kwaliteitsgarantie</h3><p>Ik lever alleen werk af waar ik volledig achter sta.</p></article>
+            <article class="benefit reveal" style="--accent: #10B981"><span><svg class="icon"><use href="#icon-users"></use></svg></span><h3>Persoonlijk contact</h3><p>Directe communicatie zonder tussenpersonen en zonder onnodige ruis.</p></article>
+            <article class="benefit reveal" style="--accent: #F59E0B"><span><svg class="icon"><use href="#icon-trending"></use></svg></span><h3>Meetbare groei</h3><p>SEO en design die aantoonbaar resultaten opleveren.</p></article>
+            <article class="benefit reveal" style="--accent: #EC4899"><span><svg class="icon"><use href="#icon-headphones"></use></svg></span><h3>Doorlopende support</h3><p>Na oplevering blijf ik beschikbaar voor vragen en aanpassingen.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-content reveal">
+          <h2>Klaar om jouw bedrijf naar <span class="gradient-text">het volgende niveau</span> te tillen?</h2>
+          <p>Neem vandaag nog contact op voor een gratis en vrijblijvend gesprek. Samen ontdekken we hoe Nova Studio jouw bedrijf kan laten groeien.</p>
+          <a class="button" href="#contact">Gratis gesprek aanvragen <svg class="icon"><use href="#icon-arrow"></use></svg></a>
+        </div>
+      </section>
+
+      <section class="section section-alt contact-section" id="contact">
+        <span class="soft-glow right"></span>
+        <span class="soft-glow left top"></span>
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="eyebrow">Neem contact op</p>
+            <h2>Klaar om te <span class="gradient-text">groeien?</span></h2>
+            <p>Stuur me een bericht of neem direct contact op. Ik reageer zo snel mogelijk.</p>
+          </header>
+
+          <div class="contact-grid">
+            <aside class="contact-info reveal">
+              <div class="panel">
+                <h3>Contactgegevens</h3>
+                <div class="contact-row" style="--accent: #3B82F6"><span><svg class="icon"><use href="#icon-mail"></use></svg></span><small>E-mail</small><strong>Niet publiek</strong></div>
+                <div class="contact-row" style="--accent: #06B6D4"><span><svg class="icon"><use href="#icon-phone"></use></svg></span><small>Telefoon</small><strong>Niet publiek</strong></div>
+                <div class="contact-row" style="--accent: #8B5CF6"><span><svg class="icon"><use href="#icon-instagram"></use></svg></span><small>Instagram</small><strong>Niet publiek</strong></div>
+                <div class="contact-row" style="--accent: #10B981"><span><svg class="icon"><use href="#icon-pin"></use></svg></span><small>Locatie</small><strong>Online</strong></div>
+              </div>
+              <p class="response-time"><span></span>Gemiddelde reactietijd: <strong>binnen 24 uur</strong></p>
+            </aside>
+
+            <div class="panel contact-panel reveal">
+              <h3>Stuur een bericht</h3>
+              <form id="contactForm">
+                <div class="form-row">
+                  <label>Naam *<input name="naam" type="text" placeholder="Jouw naam" required /></label>
+                  <label>E-mailadres *<input name="email" type="email" placeholder="naam@voorbeeld.test" required /></label>
+                </div>
+                <label>Bericht *<textarea name="bericht" rows="5" placeholder="Vertel me over jouw project of vraag..." required></textarea></label>
+                <button class="button form-button" type="submit"><span id="sendText">Verstuur bericht</span><svg class="icon"><use href="#icon-send"></use></svg></button>
+                <p class="form-note">Door te versturen ga je akkoord met het gebruik van jouw gegevens voor contactdoeleinden.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"></span><span>NOVA</span></a>
+          <p>Professioneel webdesign, SEO en grafisch ontwerp voor bedrijven die willen groeien.</p>
+        </div>
+        <div>
+          <h4>Diensten</h4>
+          <a href="#diensten">Webdesign</a>
+          <a href="#diensten">SEO-optimalisatie</a>
+          <a href="#diensten">Grafisch Ontwerp</a>
+          <a href="#diensten">Huisstijl & Branding</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <span>Contactgegevens niet publiek</span>
+          <span>Geen telefoonnummer</span>
+          <span>Geen sociale media</span>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Nova Studio. Alle rechten voorbehouden.</p>
+        <p>Webdesign · SEO · Grafisch Ontwerp</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
