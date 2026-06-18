@@ -3,12 +3,15 @@
   --bg-alt: #0a0a12;
   --panel: #111118;
   --text: #ffffff;
-  --muted: rgba(255, 255, 255, 0.58);
+  --muted: rgba(255, 255, 255, 0.74);
+  --subtle: rgba(255, 255, 255, 0.62);
   --faint: rgba(255, 255, 255, 0.08);
   --blue: #3b82f6;
   --cyan: #06b6d4;
   --violet: #8b5cf6;
   --max: 1280px;
+  --font-heading: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
 }
 
 * {
@@ -23,8 +26,12 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Outfit", system-ui, sans-serif;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 body.menu-open {
@@ -123,9 +130,9 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: "Syne", sans-serif;
+  font-family: var(--font-heading);
   font-weight: 800;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
 }
 
 .brand-mark {
@@ -169,9 +176,9 @@ a {
 
 .nav-links a {
   position: relative;
-  color: rgba(255, 255, 255, 0.62);
-  font-size: 0.9rem;
-  font-weight: 500;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.94rem;
+  font-weight: 600;
   transition: color 180ms ease;
 }
 
@@ -230,9 +237,8 @@ a {
   overflow: hidden;
   background: linear-gradient(135deg, var(--blue), var(--cyan));
   color: white;
-  font-family: "Syne", sans-serif;
+  font-family: var(--font-heading);
   font-weight: 700;
-  letter-spacing: 0.04em;
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
@@ -369,9 +375,9 @@ a {
   border-radius: 999px;
   background: rgba(59, 130, 246, 0.1);
   color: #93c5fd;
-  font-size: 0.74rem;
+  font-size: 0.76rem;
   font-weight: 600;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -388,14 +394,14 @@ a {
 .section h2,
 .cta-section h2 {
   margin: 0;
-  font-family: "Syne", sans-serif;
-  font-weight: 800;
-  line-height: 1.04;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
 .hero h1 {
-  font-size: clamp(3.2rem, 7.5vw, 5.9rem);
+  font-size: clamp(3rem, 7vw, 5.5rem);
 }
 
 .hero h1 span {
@@ -405,9 +411,9 @@ a {
 .hero-text {
   max-width: 620px;
   margin: 24px 0 36px;
-  color: rgba(255, 255, 255, 0.62);
-  font-size: clamp(1.04rem, 2vw, 1.22rem);
-  line-height: 1.65;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  line-height: 1.75;
 }
 
 .hero-text strong,
@@ -436,14 +442,14 @@ a {
 }
 
 .stats dt {
-  font-family: "Syne", sans-serif;
+  font-family: var(--font-heading);
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .stats dd {
   margin: 5px 0 0;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--subtle);
   font-size: 0.9rem;
 }
 
@@ -513,21 +519,22 @@ a {
   color: #60a5fa;
   font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
 .section-header h2,
 .about-copy h2 {
   margin-bottom: 18px;
-  font-size: clamp(2.35rem, 5vw, 3.5rem);
+  font-size: clamp(2.15rem, 4.6vw, 3.25rem);
 }
 
 .section-header p,
 .about-copy p,
 .cta-content p {
   color: var(--muted);
-  line-height: 1.7;
+  font-size: 1.02rem;
+  line-height: 1.75;
 }
 
 .service-grid,
@@ -617,7 +624,7 @@ a {
 .benefit h3,
 .process-step h3,
 .footer h4 {
-  font-family: "Syne", sans-serif;
+  font-family: var(--font-heading);
 }
 
 .card-body h3 {
@@ -626,8 +633,8 @@ a {
 }
 
 .card-body p {
-  color: rgba(255, 255, 255, 0.55);
-  line-height: 1.65;
+  color: var(--muted);
+  line-height: 1.72;
 }
 
 .card-body ul {
@@ -642,8 +649,8 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 0.94rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.96rem;
 }
 
 .card-body li::before {
@@ -659,7 +666,7 @@ a {
   align-items: center;
   gap: 8px;
   color: var(--accent);
-  font-family: "Syne", sans-serif;
+  font-family: var(--font-heading);
   font-weight: 700;
 }
 
@@ -743,12 +750,12 @@ a {
 
 .floating-stat strong {
   display: block;
-  font-family: "Syne", sans-serif;
+  font-family: var(--font-heading);
   font-size: 2rem;
 }
 
 .floating-stat span {
-  color: rgba(255, 255, 255, 0.52);
+  color: var(--subtle);
   font-size: 0.84rem;
 }
 
@@ -767,7 +774,7 @@ a {
 .check-list li {
   display: flex;
   gap: 12px;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.84);
 }
 
 .check-list li::before {
@@ -836,7 +843,7 @@ a {
   border-radius: 999px;
   background: var(--accent);
   color: var(--bg);
-  font-family: "Syne", sans-serif;
+  font-family: var(--font-heading);
   font-size: 0.63rem;
 }
 
@@ -848,8 +855,8 @@ a {
 .process-step p,
 .benefit p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.65;
+  color: var(--muted);
+  line-height: 1.72;
 }
 
 .center {
@@ -969,11 +976,12 @@ a {
 }
 
 .contact-row small {
-  color: rgba(255, 255, 255, 0.42);
+  color: var(--subtle);
+  font-weight: 500;
 }
 
 .contact-row strong {
-  font-weight: 500;
+  font-weight: 700;
   transition: color 180ms ease;
 }
 
@@ -990,7 +998,7 @@ a {
   border: 1px solid rgba(59, 130, 246, 0.2);
   border-radius: 14px;
   background: rgba(59, 130, 246, 0.08);
-  color: rgba(255, 255, 255, 0.62);
+  color: var(--muted);
 }
 
 form {
@@ -1007,8 +1015,9 @@ form {
 label {
   display: grid;
   gap: 8px;
-  color: rgba(255, 255, 255, 0.55);
-  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 input,
@@ -1020,6 +1029,8 @@ textarea {
   background: rgba(255, 255, 255, 0.04);
   color: white;
   padding: 14px 15px;
+  font-size: 1rem;
+  line-height: 1.5;
   transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 
@@ -1030,7 +1041,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.42);
 }
 
 input:focus,
@@ -1045,8 +1056,8 @@ textarea:focus {
 
 .form-note {
   margin: 0;
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.82rem;
   text-align: center;
 }
 
@@ -1096,8 +1107,8 @@ textarea:focus {
 
 .footer p {
   max-width: 330px;
-  color: rgba(255, 255, 255, 0.42);
-  line-height: 1.65;
+  color: var(--subtle);
+  line-height: 1.72;
 }
 
 .footer h4 {
@@ -1108,7 +1119,7 @@ textarea:focus {
 .footer span {
   display: block;
   margin: 10px 0;
-  color: rgba(255, 255, 255, 0.42);
+  color: var(--subtle);
   transition: color 180ms ease;
 }
 
@@ -1127,7 +1138,7 @@ textarea:focus {
 
 .footer-bottom p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 0.82rem;
 }
 
